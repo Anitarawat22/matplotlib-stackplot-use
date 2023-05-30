@@ -1,0 +1,32 @@
+1. importing the matplotlib as mp. 
+import matplotlib as mp
+
+2.importing the pyplot from matplotlob as plt
+from matplotlib import pyplot as plt
+
+we are taking a example of minutes and players as the minutes specify every minutres the player add the score there are three
+plyaers as player1,player2,player3 respectively.
+
+3.minutes
+minutes = [1,2,3,4,5,6,7,8,9]
+
+4. player1,player2,player3
+player1 =[1,2,3,3,4,4,4,4,5]
+
+player2 =[1,1,1,1,2,2,2,3,7]
+
+player3 =[1,1,1,2,2,2,3,3,5]
+
+5. we are giving the labels to the players
+
+labels = [player1,player2,player3]
+
+6.we are giving the colors to the players differnetly you can use  hex value also
+colors = ['pink','grey','yellow']
+
+use the stackplot  and add the labels and colors also
+
+plt.stackplot(minutes,player1,player2,player3,labels = labels,colors = colors)
+
+legend shows which color is specificy to which you can also write legend with the location like plt.legend(loc='upperight')
+plt.legend()
